@@ -1,0 +1,12 @@
+#editbar {
+    position: absolute;
+    width: 50%;
+    height: 50px; 
+    border: 1px solid red; 
+    background-color: rgba(192, 192, 192, .5);
+    z-index: 999999;
+}
+
+.editBarRegion > button {
+    height: 50px;
+}
