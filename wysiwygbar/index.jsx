@@ -31,7 +31,7 @@ class App extends React.Component {
         if (ind == 'content') {
             formData.append(ind, document.getElementById(this.state.contentId).innerHTML);
         }
-        if (ind = "title") {
+        if (ind == "title") {
             formData.append(ind, document.getElementById(this.state.contentId).innerText);
         }
         formData.append('sign', 'Wysiwyg edit bar');
@@ -165,7 +165,7 @@ class App extends React.Component {
             <button onClick={() => this.save()}>Save</button>
             <button onClick={() => btn.setStyle("bold")}>B</button>
             <button onClick={() => btn.setStyle("italic")}>I</button>
-            <button onClick={() => btn.setStyle("underline")}>I</button>
+            <button onClick={() => btn.setStyle("underline")}>U</button>
             </p>
         );
     }
