@@ -70,7 +70,10 @@ class Main {
         if (!is_admin()) {
             global $post; 
             $postid = $post->ID;
-            return "<p contentEditable=\"true\" id=\"edit".$postid."_".$this->subid()."\" name=\"content\">".$content."</p>";
+			// Remove paragraphs
+			$content=str_ireplace('<p>','',$content);
+			$content=str_ireplace('</p>','',$content);   
+            return "<div contentEditable=\"true\" id=\"edit".$postid."_".$this->subid()."\" name=\"content\">".$content."</div>";
         }
         return $content;
     }
