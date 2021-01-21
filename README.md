@@ -1,2 +1,6 @@
 # quickeditbarforwordpress
-Adds quick edit bar for WordPress to edit contents quickly
+Adds quick edit bar for WordPress to edit contents quickly.
+
+Install:
+Copy to "..wordpress/wp-content/plugins/" directory.
+
